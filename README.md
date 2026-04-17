@@ -2,7 +2,8 @@
 ♥️ I will be continuing on this! I actually finished the file-hider-rootkit (for fedora, freshly updated 2026) at a hospital stay. (April 17th from the time writing this!) I am soon home though!
 Sending hugs to everyone reading this! \(^v^)/
 
-<img width="3300" height="2830" alt="Made With NotebookLM" src="https://github.com/user-attachments/assets/21174472-36a4-49d6-ad61-26968948ab5f" /> \
+<img width="3309" height="3137" alt="Made With NotebookLM" src="https://github.com/user-attachments/assets/93e089cb-ffad-43ae-bdfc-c32bf9a805fd" />
+
 
 ----
 
