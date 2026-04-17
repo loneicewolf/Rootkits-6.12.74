@@ -20,6 +20,17 @@ create original ideas like for example a DISK-HIDER or SECRET-STORAGE.
 
 
 PROGRESS \
+**FEDORA**
+- [X] **FILE HIDER (including directories - 'everything is a file')** - Done at Apr 17th. Was a good challenge.
+- [X] RANDOM HOOKING - Done at Apr 17th
+- [X] LKM KEYLOGGER - Done at apr 17th
+- [X] ELEVATION OF PRIVILEGE - Done at apr 15th~
+- [X] LKM COMMAND EXECUTION - Done at apr 16th~
+- [ ] NETWORK CONNECTIONS
+- [ ] RANDOMNESS BACKDOOR
+- [ ] PERSISTENCE
+
+
 **DEBIAN**
 - [X] FILE HIDER (including directories - 'everything is a file') - done at apr 15th I think
 - [x] LKM KEYLOGGER - Done at apr 17th
@@ -28,15 +39,8 @@ PROGRESS \
 - [ ] RANDOMNESS BACKDOOR
 - [ ] ELEVATION OF PRIVILEGE 
 - [ ] PERSISTENCE
+- [ ] RANDOM HOOKING
 
-**FEDORA**
-- [X] **FILE HIDER (including directories - 'everything is a file')** - Done at Apr 17th. Was a good challenge.
-- [X] LKM KEYLOGGER - Done at apr 17th
-- [X] ELEVATION OF PRIVILEGE - Done at apr 15th~
-- [X] LKM COMMAND EXECUTION - Done at apr 16th~
-- [ ] NETWORK CONNECTIONS
-- [ ] RANDOMNESS BACKDOOR
-- [ ] PERSISTENCE
 
 **TODO**
 - [ ] make a script which disabled security measures like KASLR and stuff, for the user, so the user doesn't have to copy paste commands.
