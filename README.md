@@ -24,6 +24,7 @@ Love from Sweden.
 # TIMELINE
 ## DEBIAN
 - [X] FILE HIDER (including directories - 'everything is a file')
+- [x] LKM KEYLOGGER
 - [ ] NETWORK CONNECTIONS
 - [ ] RANDOMNESS BACKDOOR
 - [ ] ELEVATION OF PRIVILEGE 
@@ -38,7 +39,7 @@ Love from Sweden.
 - [X] ELEVATION OF PRIVILEGE 
 - [X] LKM COMMAND EXECUTION
 - [ ] PERSISTENCE
-
+- [ ] LKM KEYLOGGER
 
 
 
