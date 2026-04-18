@@ -37,34 +37,30 @@ static ssize_t (*orig_urandom_read_iter)(struct kiocb *iocb, struct iov_iter *it
 static ssize_t hook_urandom_read_iter(struct kiocb *iocb, struct iov_iter *iter)
 {
     ssize_t ret;
-    size_t count = iov_iter_count(iter);
-
-    /* 1. Let the real read happen first */
     ret = orig_urandom_read_iter(iocb, iter);
 
-    /* 2. If the read was successful, we overwrite the data in the user's buffer.
-     * Note: iov_iter_count(iter) now reflects the remaining bytes, so we use 'ret'
-     */
-    if (ret > 0 && ret <= 256) {
-        /* We need to get the user space address from the iterator.
-         * iter->ubuf is the pointer to the user's buffer in recent kernels.
-         */
+    // Increase the limit or remove it to catch 'strings'
+    // And use '1' (0x31) instead of 0x01
+    if (ret > 0) { 
         void __user *user_buf = iter->ubuf;
         
         if (user_buf) {
-            unsigned char fake[256];
-            memset(fake, 0x01, ret);
-            
-            /* Use copy_to_user since we are safely in a syscall context now */
-            if (copy_to_user(user_buf, fake, ret)) {
-                // Fail gracefully
+            // Be careful with large buffers in the kernel! 
+            // We use a loop or a smaller fixed buffer to fill the user space.
+            unsigned char printable_one = 0x31; // The character '1'
+            size_t i;
+
+            for (i = 0; i < ret; i++) {
+                // Copying one by one is slow but safe for a test LKM
+                if (copy_to_user(user_buf + i, &printable_one, 1)) {
+                    break;
+                }
             }
         }
     }
 
     return ret;
 }
-
 /* ---------------------------------------------------------
  * Ftrace Boilerplate
  * --------------------------------------------------------- */
