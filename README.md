@@ -2,8 +2,8 @@
 ♥️ I will be continuing on this! I actually finished the file-hider-rootkit (for fedora, freshly updated 2026) at a hospital stay. (April 17th from the time writing this!) I am soon home though!
 Sending hugs to everyone reading this! \(^v^)/
 
-<img width="3309" height="3137" alt="Made With NotebookLM" src="https://github.com/user-attachments/assets/93e089cb-ffad-43ae-bdfc-c32bf9a805fd" />
-
+<img width="3396" height="7136" alt="image" src="https://github.com/user-attachments/assets/37b118dd-9e45-4d4e-b09a-1ebca9318774" /> \
+click to zoom
 
 What does these rootkits work on?
 specifically
